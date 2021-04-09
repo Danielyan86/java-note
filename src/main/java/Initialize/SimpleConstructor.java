@@ -1,4 +1,4 @@
-package Inicilize;
+package Initialize;
 
 class Rock {
     Rock() {
