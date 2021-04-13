@@ -4,7 +4,7 @@ class WaterSource {
     private String s;
 
     WaterSource() {
-        System.out.println("WaterSource()")
+        System.out.println("WaterSource()");
     }
 }
 
