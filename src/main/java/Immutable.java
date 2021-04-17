@@ -1,4 +1,4 @@
-
+// This concept is similar with Python string object
 public class Immutable {
     public static String upcase(String s) {
         return s.toUpperCase();
