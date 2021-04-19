@@ -22,11 +22,17 @@ public class Point {
 
     }
 
+    @Override
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
+
     public static void main(String[] args) {
         Point p = new Point();
         p.setX(3);
         p.setY(4);
         double result = p.distance();
         System.out.println(result);
+        System.out.println(p.toString());
     }
 }
