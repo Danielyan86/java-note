@@ -14,8 +14,9 @@ public class CalendarTest {
         int value = weekday.getValue();
 
         System.out.println("Mon Tue Wed Thu Fri Sat Sun");
-        for (int i = 1; i < value; i++) {
-            System.out.print("   ");
+        for (int i = 1; i < value; i++) { //create indentation if the 1st day of month is not Mon
+            System.out.print("    ");//because the word of each day contains 3 letters, e.g MOD,
+            // so the number of spaces is 4
         }
         while (date.getMonthValue() == month) {
             System.out.printf("%3d", date.getDayOfMonth());
