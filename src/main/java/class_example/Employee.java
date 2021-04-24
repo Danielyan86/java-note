@@ -13,8 +13,9 @@ public class Employee {
     }
 
     public Employee(String name, double s, int year, int month, int day) {
-        // the value of the name is null
-        name = name;  //if the parameter use the same with class var, actual value can't be passed to this function
+        // if we want to assign the name value to instant value name, it should be write as this.name=name
+        name = name;  //if the function parameter name is the same with class name, the class var is override
+        System.out.println(name);
         salary = s; //if the variable in function is not defined, it will use the class var as default value
         hireDay = LocalDate.of(year, month, day);
 
@@ -33,7 +34,6 @@ public class Employee {
     }
 
     public void raiseSalary(double byPercent) {
-        double raise = salary * byPercent / 100;
-        salary = raise;
+        salary = salary * byPercent / 100;
     }
 }
