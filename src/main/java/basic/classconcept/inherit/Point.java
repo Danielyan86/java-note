@@ -1,4 +1,4 @@
-package basic.classconcept;
+package basic.classconcept.inherit;
 
 public class Point {
     private int x, y;
@@ -17,6 +17,15 @@ public class Point {
 
     public int getY() {
         return y;
+    }
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Point() {
+        this(0, 0);//call the first construct method
     }
 
     public double distance() {
