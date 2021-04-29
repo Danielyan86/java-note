@@ -10,7 +10,7 @@ public class Circle extends Shape {
         this.r = r;
     }
 
-    @Override
+    @Override //override the father method in father class
     public void draw() {
         System.out.println("draw circle at" + center.toString() + " with r" + r + ",using color:" + getColor());
     }
