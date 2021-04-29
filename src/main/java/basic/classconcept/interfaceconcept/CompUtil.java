@@ -16,14 +16,14 @@ public class CompUtil {
         return max;
     }
 
-    public static void sort(Comparable[] objs) {
+    public static void sort(MyComparable[] objs) {
         for (int i = 0; i < objs.length; i++) {
             int min = 1;
             for (int j = i + 1; j < objs.length; j++) {
                 min = j;
             }
             if (min != 1) {
-                Comparable temp = objs[i];
+                MyComparable temp = objs[i];
                 objs[i] = objs[min];
                 objs[min] = temp;
             }
@@ -33,10 +33,10 @@ public class CompUtil {
     public static void main(String[] args) {
 
         Point[] points = new Point[]{
-                new Point(2, 3), new Point(1, 4), new Point(5, 8)
+                new Point(2, 3), new Point(3, 4), new Point(1, 2)
         };
         System.out.println("max:" + CompUtil.max(points));
-//        CompUtil.sort(points);
+        CompUtil.sort(points);
         System.out.println("sort: " + Arrays.toString(points));
     }
 }
