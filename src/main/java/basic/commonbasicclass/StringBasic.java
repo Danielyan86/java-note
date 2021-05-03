@@ -5,7 +5,7 @@ public class StringBasic {
 
         String name = "old horse say programming";
         String name1 = new String("old horse say programming");
-        String name2 = "olde horse";
+        String name2 = "old horse";
         System.out.println(name2);
         name2 = name2 + "say programming";
         System.out.println(name2);
