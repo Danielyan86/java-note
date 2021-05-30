@@ -1,6 +1,6 @@
 package ThreadConcept;
 
-public class HelloThread extends Thread {
+public class HelloThreadRunMethod extends Thread {
     @Override
     public void run() {
         System.out.println("thread name:" + Thread.currentThread().getName());//return the running object
@@ -8,8 +8,8 @@ public class HelloThread extends Thread {
     }
 
     public static void main(String[] args) {
-        Thread thread = new HelloThread();
-        thread.start();
+        Thread thread = new HelloThreadRunMethod();
+        thread.run();//run method will be called in main thread
     }
 
 }
